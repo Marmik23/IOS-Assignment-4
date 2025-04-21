@@ -16,29 +16,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-mg-mGE">
-                                <rect key="frame" x="69" y="335" width="254" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZU-2n-DEe">
-                                <rect key="frame" x="69" y="169" width="254" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMQ-7n-Dv7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMQ-7n-Dv7">
                                 <rect key="frame" x="152" y="500" width="89" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="55G-7T-9EG"/>
+                                    <constraint firstAttribute="width" constant="89" id="PyJ-ND-c6k"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
                                 <connections>
                                     <segue destination="2W2-EO-BGf" kind="show" id="6ZD-Op-j12"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-mg-mGE">
+                                <rect key="frame" x="25" y="353" width="343" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZU-2n-DEe">
+                                <rect key="frame" x="25" y="128" width="343" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MZU-2n-DEe" secondAttribute="height" multiplier="343:164" id="OF0-Hl-9nU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wtc-mg-mGE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="400" id="4vQ-hN-3nG">
+                                <variation key="heightClass=compact-widthClass=regular" constant="354"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wtc-mg-mGE" secondAttribute="bottom" constant="75" id="CTE-fy-xJy">
+                                <variation key="heightClass=compact-widthClass=regular" constant="75"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="356"/>
+                            </constraint>
+                            <constraint firstItem="Wtc-mg-mGE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="KAe-uc-y9l">
+                                <variation key="heightClass=compact-widthClass=regular" constant="131"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EMQ-7n-Dv7" secondAttribute="bottom" constant="75" id="PhF-tC-Fy0">
+                                <variation key="heightClass=compact-widthClass=regular" constant="75"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="281"/>
+                            </constraint>
+                            <constraint firstItem="EMQ-7n-Dv7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="Wgo-Fv-9tR">
+                                <variation key="heightClass=compact-widthClass=regular" constant="135"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="397"/>
+                            </constraint>
+                            <constraint firstItem="MZU-2n-DEe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="baG-jq-JBQ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="75"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="MZU-2n-DEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="eA9-DK-muJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wtc-mg-mGE" secondAttribute="trailing" constant="250" id="jfJ-Ie-FbL">
+                                <variation key="heightClass=compact-widthClass=regular" constant="173"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="EMQ-7n-Dv7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="500" id="tzf-EI-dmb">
+                                <variation key="heightClass=compact-widthClass=regular" constant="588"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="152"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MZU-2n-DEe" secondAttribute="trailing" constant="350" id="x2r-s0-oGb">
+                                <variation key="heightClass=compact-widthClass=regular" constant="400"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMQ-7n-Dv7" secondAttribute="trailing" constant="75" id="zVG-On-BAs">
+                                <variation key="heightClass=compact-widthClass=regular" constant="75"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="152"/>
+                            </constraint>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="be2-BO-dnV"/>
                     <connections>
@@ -103,9 +150,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-dg-kqi">
-                                <rect key="frame" x="16" y="145" width="361" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-dg-kqi">
+                                <rect key="frame" x="25" y="127.99999999999997" width="348" height="286.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e3O-dg-kqi" secondAttribute="height" multiplier="361:297" id="C0y-oP-CcD"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epn-Zu-ED3">
                                 <rect key="frame" x="16" y="503" width="361" height="224"/>
@@ -117,6 +166,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pce-zc-xJk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e3O-dg-kqi" firstAttribute="leading" secondItem="Pce-zc-xJk" secondAttribute="leading" constant="25" id="APA-yo-KwD"/>
+                            <constraint firstItem="Pce-zc-xJk" firstAttribute="trailing" secondItem="e3O-dg-kqi" secondAttribute="trailing" constant="20" id="Svi-Jx-roL">
+                                <variation key="heightClass=compact-widthClass=regular" constant="350"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="e3O-dg-kqi" firstAttribute="top" secondItem="Pce-zc-xJk" secondAttribute="top" constant="50" id="gaw-hg-Rxl">
+                                <variation key="heightClass=compact-widthClass=regular" constant="9"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                            </constraint>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iju-q7-Ig9"/>
                     <connections>
